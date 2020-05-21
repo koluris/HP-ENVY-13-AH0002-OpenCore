@@ -2,7 +2,7 @@
 Attempt to Hackintosh a HP laptop
 
 ### Overall
-So far the build is awesome, cold boot time to Mac in 9 seconds!
+So far the build is awesome, cold boot time to Mac in 16 seconds!
 
 ### Specifications
 
