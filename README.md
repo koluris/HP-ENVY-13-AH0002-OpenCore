@@ -17,5 +17,6 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 * Low audio volume & absence of bottom speakers
 * Proper USB ports
 * SD Card
+* Webcam
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ErfofIAxkd4/0.jpg)](https://www.youtube.com/watch?v=ErfofIAxkd4)
