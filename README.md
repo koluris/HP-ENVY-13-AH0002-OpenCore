@@ -1,6 +1,9 @@
 # HP-ENVY-13-AH0002-OpenCore
 Attempt to Hackintosh a HP laptop
 
+### Overall
+So far the build is awesome, cold boot time to Mac in 9 seconds!
+
 ### Specifications
 
 * Processor: Core i5-8250U 1.6GHz (Turbo Boost up to 3.4GHz)
@@ -11,10 +14,6 @@ Attempt to Hackintosh a HP laptop
 ### What doesn't work
 
 * Wifi + Bluetooth (Replace it with something compatible)
-* Load audio volume & absence of bottom speakers
+* Low audio volume & absence of bottom speakers
 * Proper USB ports
 * SD Card
-
-
-
-So far the build is awesome, cold boot time to Mac in 9 seconds!
