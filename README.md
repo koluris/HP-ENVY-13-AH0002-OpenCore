@@ -19,6 +19,7 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 * Trackpad Gestures
 * USB Ports USB2/3/C
 * Batt. indicator
+* Proper CPU PM (Balanced)
 * Sleep
 
 ### What doesn't work
