@@ -11,11 +11,20 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 * RAM: 8GB DDR3 2133MHz
 * Hard Disk: PCI NVMe 256GB SSD
 
+### What is near 100% completed
+
+* Intel HD 620 (0x1759) 1.5GB Shared mem / Metal
+* AppleHDA Sound / Mic / Headphones
+* Brightness, Sound, KB Lit shortcuts
+* Trackpad Gestures
+* USB Ports USB2/3/C
+* Batt. indicator
+* Sleep
+
 ### What doesn't work
 
 * Wifi + Bluetooth (Replace it with something compatible)
 * Low audio volume & absence of bottom speakers
-* Proper USB ports
 * SD Card
 * Webcam
 
