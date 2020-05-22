@@ -13,7 +13,7 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 
 ### What is near 100% completed
 
-* Intel HD 620 (0x1759) 1.5GB Shared mem / Metal
+* Intel HD620 1.5GB Mem / Metal support / Netflix DRM on Chrome
 * AppleHDA Sound / Mic / Headphones
 * Brightness, Sound, KB Lit shortcuts
 * Trackpad Gestures
@@ -28,5 +28,6 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 * Low audio volume & absence of bottom speakers
 * SD Card
 * Webcam
+* Apple TV DRM
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ErfofIAxkd4/0.jpg)](https://www.youtube.com/watch?v=ErfofIAxkd4)
