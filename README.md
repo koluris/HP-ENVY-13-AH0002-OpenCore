@@ -25,7 +25,7 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 
 ### Bonus
 * Bluetooth sort of works with experimental driver
-* ICC Profile that improves the screens native color
+* ICC Profile that improves the screen's native color
 
 ### What doesn't work
 
