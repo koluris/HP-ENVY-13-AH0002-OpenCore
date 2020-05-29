@@ -22,7 +22,10 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 * Batt. indicator
 * Proper CPU PM (Balanced)
 * Sleep
+
+### Bonus
 * Bluetooth sort of works with experimental driver
+* ICC Profile that improves the screens native color
 
 ### What doesn't work
 
