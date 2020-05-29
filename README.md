@@ -18,16 +18,17 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 * Brightness, KB Backlit, Volume shortcuts
 * Trackpad Gestures / Doesn't stall after KB press
 * USB Ports USB2/3/C
+* Webcam
 * Batt. indicator
 * Proper CPU PM (Balanced)
 * Sleep
+* Bluetooth sort of works with experimental driver
 
 ### What doesn't work
 
-* Wifi + Bluetooth (Replace it with something compatible)
+* Wifi (Replace it with something compatible)
 * Low audio volume & absence of bottom speakers
 * SD Card
-* Webcam
 * Apple TV DRM
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ErfofIAxkd4/0.jpg)](https://www.youtube.com/watch?v=ErfofIAxkd4)
