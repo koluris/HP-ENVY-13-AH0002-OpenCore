@@ -1,268 +1,47 @@
 DefinitionBlock ("", "SSDT", 2, "HPENVY", "_PNLF", 0x00000000)
 {
-    External (_SB_.PCI0.GFX0, DeviceObj)
-    External (RMCF.BKLT, IntObj)
-    External (RMCF.FBTP, IntObj)
-    External (RMCF.GRAN, IntObj)
-    External (RMCF.LEVW, IntObj)
-    External (RMCF.LMAX, IntObj)
-
-    Scope (\_SB.PCI0.GFX0)
+    If (_OSI ("Darwin"))
     {
-        OperationRegion (RMP3, PCI_Config, Zero, 0x14)
-    }
-
-    Device (\_SB.PCI0.GFX0.PNLF)
-    {
-        Name (_ADR, Zero)
-        Name (_HID, EisaId ("APP0002"))
-        Name (_CID, "backlight")
-        Name (_UID, Zero)
-        Name (_STA, 0x0B)
-        Field (^RMP3, AnyAcc, NoLock, Preserve)
+        Scope(_SB)
         {
-            Offset (0x02), 
-            GDID,   16, 
-            Offset (0x10), 
-            BAR1,   32
-        }
-
-        OperationRegion (RMB1, SystemMemory, (BAR1 & 0xFFFFFFFFFFFFFFF0), 0x000E1184)
-        Field (RMB1, AnyAcc, Lock, Preserve)
-        {
-            Offset (0x48250), 
-            LEV2,   32, 
-            LEVL,   32, 
-            Offset (0x70040), 
-            P0BL,   32, 
-            Offset (0xC2000), 
-            GRAN,   32, 
-            Offset (0xC8250), 
-            LEVW,   32, 
-            LEVX,   32, 
-            LEVD,   32, 
-            Offset (0xE1180), 
-            PCHL,   32
-        }
-
-        Method (INI1, 1, NotSerialized)
-        {
-            If ((Zero == (0x02 & Arg0)))
+            Device(PNLF)
             {
-                Local5 = 0xC0000000
-                If (CondRefOf (\RMCF.LEVW))
+                Name (_ADR, Zero)
+                Name (_HID, EisaId ("APP0002"))
+                Name (_CID, "backlight")
+                Name (_UID, 16)
+                
+                Method (_BCL, 0, NotSerialized)
                 {
-                    If ((Ones != \RMCF.LEVW))
+                    Return (Package (0x13)
                     {
-                        Local5 = \RMCF.LEVW
-                    }
+                        1388, 
+                        252, 
+                        0, 
+                        24, 
+                        39, 
+                        58, 
+                        82, 
+                        113, 
+                        150, 
+                        196, 
+                        252, 
+                        320, 
+                        403, 
+                        502, 
+                        622, 
+                        766, 
+                        938, 
+                        1144, 
+                        1388
+                    })
                 }
-
-                ^LEVW = Local5
-            }
-
-            If ((0x04 & Arg0))
-            {
-                If (CondRefOf (\RMCF.GRAN))
+                
+                Method (_STA, 0, NotSerialized)
                 {
-                    ^GRAN = \RMCF.GRAN
-                }
-                Else
-                {
-                    ^GRAN = Zero
+                    Return (0x0B)
                 }
             }
-        }
-
-        Method (_INI, 0, NotSerialized)
-        {
-            Local4 = One
-            If (CondRefOf (\RMCF.BKLT))
-            {
-                Local4 = \RMCF.BKLT
-            }
-
-            If (!(One & Local4))
-            {
-                Return (Zero)
-            }
-
-            Local0 = ^GDID
-            Local2 = Ones
-            If (CondRefOf (\RMCF.LMAX))
-            {
-                Local2 = \RMCF.LMAX
-            }
-
-            Local3 = Zero
-            If (CondRefOf (\RMCF.FBTP))
-            {
-                Local3 = \RMCF.FBTP
-            }
-
-            If (((One == Local3) || (Ones != Match (Package (0x10)
-                                {
-                                    0x010B, 
-                                    0x0102, 
-                                    0x0106, 
-                                    0x1106, 
-                                    0x1601, 
-                                    0x0116, 
-                                    0x0126, 
-                                    0x0112, 
-                                    0x0122, 
-                                    0x0152, 
-                                    0x0156, 
-                                    0x0162, 
-                                    0x0166, 
-                                    0x016A, 
-                                    0x46, 
-                                    0x42
-                                }, MEQ, Local0, MTR, Zero, Zero))))
-            {
-                If ((Ones == Local2))
-                {
-                    Local2 = 0x0710
-                }
-
-                Local1 = (^LEVX >> 0x10)
-                If (!Local1)
-                {
-                    Local1 = Local2
-                }
-
-                If ((!(0x08 & Local4) && (Local2 != Local1)))
-                {
-                    Local0 = ((^LEVL * Local2) / Local1)
-                    Local3 = (Local2 << 0x10)
-                    If ((Local2 > Local1))
-                    {
-                        ^LEVX = Local3
-                        ^LEVL = Local0
-                    }
-                    Else
-                    {
-                        ^LEVL = Local0
-                        ^LEVX = Local3
-                    }
-                }
-            }
-            ElseIf (((0x03 == Local3) || (Ones != Match (Package (0x04)
-                                {
-                                    0x3E9B, 
-                                    0x3EA5, 
-                                    0x3E92, 
-                                    0x3E91
-                                }, MEQ, Local0, MTR, Zero, Zero))))
-            {
-                If ((Ones == Local2))
-                {
-                    Local2 = 0xFFFF
-                }
-
-                INI1 (Local4)
-                Local1 = ^LEVX /* \_SB_.PCI0.GFX0.PNLF.LEVX */
-                If (!Local1)
-                {
-                    Local1 = Local2
-                }
-
-                If ((!(0x08 & Local4) && (Local2 != Local1)))
-                {
-                    Local0 = ((^LEVD * Local2) / Local1)
-                    If ((Local2 > Local1))
-                    {
-                        ^LEVX = Local2
-                        ^LEVD = Local0
-                    }
-                    Else
-                    {
-                        ^LEVD = Local0
-                        ^LEVX = Local2
-                    }
-                }
-            }
-            Else
-            {
-                If ((Ones == Local2))
-                {
-                    If ((Ones != Match (Package (0x16)
-                                    {
-                                        0x0D26, 
-                                        0x0A26, 
-                                        0x0D22, 
-                                        0x0412, 
-                                        0x0416, 
-                                        0x0A16, 
-                                        0x0A1E, 
-                                        0x0A1E, 
-                                        0x0A2E, 
-                                        0x041E, 
-                                        0x041A, 
-                                        0x0BD1, 
-                                        0x0BD2, 
-                                        0x0BD3, 
-                                        0x1606, 
-                                        0x160E, 
-                                        0x1616, 
-                                        0x161E, 
-                                        0x1626, 
-                                        0x1622, 
-                                        0x1612, 
-                                        0x162B
-                                    }, MEQ, Local0, MTR, Zero, Zero)))
-                    {
-                        Local2 = 0x0AD9
-                    }
-                    Else
-                    {
-                        Local2 = 0x056C
-                    }
-                }
-
-                INI1 (Local4)
-                Local1 = (^LEVX >> 0x10)
-                If (!Local1)
-                {
-                    Local1 = Local2
-                }
-
-                If ((!(0x08 & Local4) && (Local2 != Local1)))
-                {
-                    Local0 = ((((^LEVX & 0xFFFF) * Local2) / Local1) | 
-                        (Local2 << 0x10))
-                    ^LEVX = Local0
-                }
-            }
-
-            If ((Local2 == 0x0710))
-            {
-                _UID = 0x0E
-            }
-            ElseIf ((Local2 == 0x0AD9))
-            {
-                _UID = 0x0F
-            }
-            ElseIf ((Local2 == 0x056C))
-            {
-                _UID = 0x10
-            }
-            ElseIf ((Local2 == 0x07A1))
-            {
-                _UID = 0x11
-            }
-            ElseIf ((Local2 == 0x1499))
-            {
-                _UID = 0x12
-            }
-            ElseIf ((Local2 == 0xFFFF))
-            {
-                _UID = 0x13
-            }
-            Else
-            {
-                _UID = 0x63
-            }
-        }
+        }        
     }
 }
