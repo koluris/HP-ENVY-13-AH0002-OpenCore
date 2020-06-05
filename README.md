@@ -11,6 +11,8 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 * RAM: 8GB DDR3 2133MHz
 * Hard Disk: PCI NVMe 256GB SSD
 
+![About](https://raw.githubusercontent.com/dkoluris/HP-ENVY-13-AH0002-OpenCore/master/Screenshots/About.jpg)
+
 ### What is near 100% completed
 
 * Intel HD620 1.5GB Mem / Metal support / USB-C Out / Netflix DRM on Chrome
@@ -23,9 +25,13 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 * Proper CPU PM (Balanced)
 * Sleep
 
+![Trackpad](https://raw.githubusercontent.com/dkoluris/HP-ENVY-13-AH0002-OpenCore/master/Screenshots/Trackpad.jpg)
+
 ### Bonus
 * Bluetooth sort of works with experimental driver
 * ICC Profile that improves the screen's native color
+
+![Bluetooth](https://raw.githubusercontent.com/dkoluris/HP-ENVY-13-AH0002-OpenCore/master/Screenshots/Bluetooth.jpg)
 
 ### What doesn't work
 
