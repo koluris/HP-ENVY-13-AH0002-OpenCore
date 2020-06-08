@@ -40,4 +40,6 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 * SD Card
 * Apple TV DRM
 
+![Geekbench](https://raw.githubusercontent.com/dkoluris/HP-ENVY-13-AH0002-OpenCore/master/Screenshots/Scores.jpg)
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ErfofIAxkd4/0.jpg)](https://www.youtube.com/watch?v=ErfofIAxkd4)
