@@ -7,7 +7,7 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 ### Specifications
 
 * Processor: Core i5-8250U 1.6GHz (Turbo Boost up to 3.4GHz)
-* Graphics: Intel HD620 (Up to 1.5GB shared mem)
+* Graphics: Intel HD620 (Up to 2GB of shared mem)
 * RAM: 8GB DDR3 2133MHz
 * Hard Disk: PCI NVMe 256GB SSD
 
