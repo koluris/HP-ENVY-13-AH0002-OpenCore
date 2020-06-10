@@ -15,10 +15,10 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 
 ### What is near 100% completed
 
-* Intel HD620 1.5GB Mem / Metal support / USB-C Out / Netflix DRM on Chrome
-* AppleHDA Sound / Mic / Headphones
+* HD620 2GB / Metal / Fixed RGB Banding / USB-C DP / DRM works on Chrome
+* ALC285 Speaker (2 top) / Mic / Headphones
 * Brightness, KB Backlit, Volume shortcuts
-* Trackpad Gestures and doesn't stall after KB press
+* Trackpad Gestures / Doesn't stall after KB press
 * USB Ports USB2/3/C
 * Webcam
 * Batt. indicator
