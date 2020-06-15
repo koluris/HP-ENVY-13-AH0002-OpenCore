@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DisplayProductID</key>
+	<integer>37415</integer>
+	<key>DisplayProductName</key>
+	<string>SAMSUNG</string>
+	<key>DisplayVendorID</key>
+	<integer>1552</integer>
+	<key>IODisplayEDID</key>
+	<data>
+	AP///////wAGECeSHwAjFiMWAQS1PCJ4Im+xp1VMniUMUFS974BxT4HAgQCBgJUAqcCz
+	AAEBCOgAMPJwWoCwWIoAUB10AAAeAAAA/wBDMDJKOTAwWEYyR0MKAAAA/QA4TB5TEQAK
+	ICAgICAgAAAA/ABUaHVuZGVyYm9sdAogAWA=
+	</data>
+</dict>
+</plist>
