@@ -15,12 +15,15 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 
 ### What is near 100% completed
 
-* HD620 2GB / Metal / Fixed RGB Banding / USB-C DP / DRM works on Chrome
+* HD620 2GB / Metal / Fixed RGB Banding / DRM works on Chrome
+* Touchscreen with Gestures
+* USB-C DP to 4K Monitor/TV (Sleep laptop at least once on a cold boot to make this work)
 * ALC285 Speaker (2 top) / Mic / Headphones
 * Brightness, KB Backlit, Volume shortcuts
 * Trackpad Gestures / Doesn't stall after KB press
 * USB Ports USB2/3/C
 * Webcam
+* SD Card
 * Batt. indicator
 * Proper CPU PM (Balanced)
 * Sleep
@@ -37,9 +40,10 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 
 * Wifi (Replace it with something compatible)
 * Low audio volume & absence of bottom speakers
-* SD Card
 * Apple TV DRM
 
 ![Geekbench](https://raw.githubusercontent.com/dkoluris/HP-ENVY-13-AH0002-OpenCore/master/Screenshots/Scores.jpg)
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ErfofIAxkd4/0.jpg)](https://www.youtube.com/watch?v=ErfofIAxkd4)
+
+A big thanks to contribution of https://github.com/rholelaw!
