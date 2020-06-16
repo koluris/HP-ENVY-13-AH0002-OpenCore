@@ -18044,6 +18044,18 @@ DefinitionBlock ("", "DSDT", 2, "HPQOEM", "SLIC-MPC", 0x00000000)
         })
         Method (GPRW, 2, NotSerialized)
         {
+            If (_OSI ("Darwin"))
+            {
+                If ((0x6D == Arg0))
+                {
+                    Return (Package ()
+                    {
+                        0x6D,
+                        Zero
+                    })
+                }
+            }
+            
             Store (Arg0, Index (PRWP, Zero))
             Store (ShiftLeft (SS1, One), Local0)
             Or (Local0, ShiftLeft (SS2, 0x02), Local0)
