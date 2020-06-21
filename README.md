@@ -7,9 +7,10 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 ### Specifications
 
 * Processor: Core i5-8250U 1.6GHz (Turbo Boost up to 3.4GHz)
-* Graphics: Intel HD620 (Up to 2GB of shared mem)
+* Graphics: Intel HD620 (Up to 2GB of shared mem) / 1080p 24bit
 * RAM: 8GB DDR3 2133MHz
 * Hard Disk: PCI NVMe 256GB SSD
+* Wifi & Bluetooth: Intel Dual Band Wireless-AC 8265
 
 ![About](https://raw.githubusercontent.com/dkoluris/HP-ENVY-13-AH0002-OpenCore/master/Screenshots/About.jpg)
 
