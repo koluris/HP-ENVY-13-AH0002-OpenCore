@@ -31,14 +31,12 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 ![Trackpad](https://raw.githubusercontent.com/dkoluris/HP-ENVY-13-AH0002-OpenCore/master/Screenshots/Trackpad.jpg)
 
 ### Bonus
-* Bluetooth sort of works with experimental driver
+* Wifi & Bluetooth work, but with experimental driver and HeliPort app (expect some problems)
 * ICC Profile that improves the screen's native color
 
 ![Bluetooth](https://raw.githubusercontent.com/dkoluris/HP-ENVY-13-AH0002-OpenCore/master/Screenshots/Bluetooth.jpg)
 
 ### What doesn't work
-
-* Wifi (Replace it with something compatible)
 * Low audio volume & absence of bottom speakers
 * Apple TV DRM
 
