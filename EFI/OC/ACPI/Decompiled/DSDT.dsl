@@ -14848,11 +14848,6 @@ DefinitionBlock ("", "DSDT", 2, "HPQOEM", "SLIC-MPC", 0x00000000)
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
             {
-                If (_OSI ("Darwin"))
-                {
-                    Return (0x0F)
-                }
-
                 If (LOr (LEqual (SDS0, 0x05), LOr (LEqual (SDS0, One), LOr (LEqual (SDS0, 0x02), LEqual (SDS0, 0x06)))))
                 {
                     Return (0x0F)
@@ -14863,11 +14858,6 @@ DefinitionBlock ("", "DSDT", 2, "HPQOEM", "SLIC-MPC", 0x00000000)
 
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
-                If (_OSI ("Darwin"))
-                {
-                    Return (ConcatenateResTemplate (SBFB, SBFG))
-                }
-
                 If (LLess (OSYS, 0x07DC))
                 {
                     Return (SBFI)
@@ -15215,11 +15205,6 @@ DefinitionBlock ("", "DSDT", 2, "HPQOEM", "SLIC-MPC", 0x00000000)
 
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
-                If (_OSI ("Darwin"))
-                {
-                    Return (ConcatenateResTemplate (SBFB, SBFG))
-                }
-
                 If (LLess (OSYS, 0x07DC))
                 {
                     Return (SBFI)
@@ -15280,6 +15265,11 @@ DefinitionBlock ("", "DSDT", 2, "HPQOEM", "SLIC-MPC", 0x00000000)
 
             Method (_STA, 0, NotSerialized)  // _STA: Status
             {
+                If (_OSI ("Darwin"))
+                {
+                    Return (Zero)
+                }
+                
                 Return (0x0F)
             }
 
@@ -17915,7 +17905,7 @@ DefinitionBlock ("", "DSDT", 2, "HPQOEM", "SLIC-MPC", 0x00000000)
                     Store (0x07DD, OSYS)
                 }
 
-                If ((_OSI ("Darwin") || _OSI ("Windows 2015")))
+                If (_OSI ("Windows 2015") || _OSI ("Darwin"))
                 {
                     Store (0x07DF, OSYS)
                 }
