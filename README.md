@@ -1,5 +1,5 @@
 # HP-ENVY-13-AH0002-OpenCore
-Attempt to Hackintosh a HP laptop
+Attempt to Hackintosh a 13" HP ultrabook
 
 ### Overall
 So far the build is awesome, cold boot time to Mac in 16 seconds!
