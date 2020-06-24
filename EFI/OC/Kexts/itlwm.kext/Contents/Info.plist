@@ -60,10 +60,10 @@
 			<dict>
 				<key>WiFi_1</key>
 				<dict>
-					<key>password</key>
-					<string>REPLACE_PASSWORD</string>
 					<key>ssid</key>
-					<string>REPLACE_SSID</string>
+					<string>mavro</string>
+					<key>password</key>
+					<string>2106719516</string>
 				</dict>
 			</dict>
 		</dict>
