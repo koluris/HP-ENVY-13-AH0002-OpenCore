@@ -16,51 +16,15 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-EC-USBX.aml</string>
+				<string>SSDT-PATCH.aml</string>
 				<key>Path</key>
-				<string>SSDT-EC-USBX.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-PNLF.aml</string>
-				<key>Path</key>
-				<string>SSDT-PNLF.aml</string>
+				<string>SSDT-PATCH.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
-			<dict>
-				<key>All</key>
-				<false/>
-				<key>Comment</key>
-				<string>Delete CpuPm</string>
-				<key>Enabled</key>
-				<false/>
-				<key>OemTableId</key>
-				<data>Q3B1UG0AAAA=</data>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>U1NEVA==</data>
-			</dict>
-			<dict>
-				<key>All</key>
-				<false/>
-				<key>Comment</key>
-				<string>Delete Cpu0Ist</string>
-				<key>Enabled</key>
-				<false/>
-				<key>OemTableId</key>
-				<data>Q3B1MElzdAA=</data>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>U1NEVA==</data>
-			</dict>
 		</array>
 		<key>Patch</key>
 		<array>
@@ -696,7 +660,7 @@
 			<key>MLB</key>
 			<string></string>
 			<key>ROM</key>
-			<data>ESIzRFVm</data>
+			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
@@ -741,7 +705,7 @@
 			<key>AudioSupport</key>
 			<true/>
 			<key>MinimumVolume</key>
-			<integer>50</integer>
+			<integer>0</integer>
 			<key>PlayChime</key>
 			<true/>
 			<key>VolumeAmplifier</key>
@@ -788,7 +752,7 @@
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
-			<false/>
+			<true/>
 			<key>ReconnectOnResChange</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
