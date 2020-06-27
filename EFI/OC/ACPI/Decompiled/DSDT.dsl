@@ -14867,7 +14867,7 @@ DefinitionBlock ("", "DSDT", 2, "HPQOEM", "SLIC-MPC", 0x00000000)
             {
                 if (_OSI ("Darwin"))
                 {
-                    Return (0xFF)
+                    Return (0x0F)
                 }
                 
                 If (LOr (LEqual (SDS0, 0x05), LOr (LEqual (SDS0, One), LOr (LEqual (SDS0, 
@@ -15203,7 +15203,7 @@ DefinitionBlock ("", "DSDT", 2, "HPQOEM", "SLIC-MPC", 0x00000000)
             {
                 if (_OSI ("Darwin"))
                 {
-                    Return (0xFF)
+                    Return (0x0F)
                 }
 
                 If (LEqual (^^^LPCB.EC0.PCBV, 0x02))
