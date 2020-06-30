@@ -1,5 +1,6 @@
 DefinitionBlock ("", "SSDT", 2, "HPENVY", "_PATCH", 0x00000000)
 {
+    External (_SB_.PCI0.GFX0, DeviceObj)
     External (_SB_.PCI0.LPCB, DeviceObj)
     External (_PR_.PR00, ProcessorObj)
 
@@ -9,16 +10,6 @@ DefinitionBlock ("", "SSDT", 2, "HPENVY", "_PATCH", 0x00000000)
 
         Scope (_SB)
         {
-            // PNLF
-
-            Device (PNLF)
-            {
-                Name (_HID, EisaId ("APP0002"))
-                Name (_CID, "backlight")
-                Name (_UID, 0x10)
-                Name (_STA, 0x0B)
-            }
-
             // USBX
 
             Device (USBX)
@@ -65,6 +56,21 @@ DefinitionBlock ("", "SSDT", 2, "HPENVY", "_PATCH", 0x00000000)
                         0x00
                     }
                 Return (Zero)
+            }
+        }
+
+        // Scope: \_SB.PCI0.GFX0
+
+        Scope (_SB.PCI0.GFX0)
+        {
+            // PNLF
+
+            Device (PNLF)
+            {
+                Name (_HID, EisaId ("APP0002"))
+                Name (_CID, "backlight")
+                Name (_UID, 0x10)
+                Name (_STA, 0x0B)
             }
         }
 

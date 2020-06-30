@@ -14881,6 +14881,11 @@ DefinitionBlock ("", "DSDT", 2, "HPQOEM", "SLIC-MPC", 0x00000000)
 
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
+                if (_OSI ("Darwin"))
+                {
+                    Return (ConcatenateResTemplate (SBFB, SBFG))
+                }
+
                 If (LLess (OSYS, 0x07DC))
                 {
                     Return (SBFI) /* \_SB_.PCI0.I2C0.TPD0.SBFI */
@@ -15228,6 +15233,11 @@ DefinitionBlock ("", "DSDT", 2, "HPQOEM", "SLIC-MPC", 0x00000000)
 
             Method (_CRS, 0, NotSerialized)  // _CRS: Current Resource Settings
             {
+                if (_OSI ("Darwin"))
+                {
+                    Return (ConcatenateResTemplate (SBFB, SBFG))
+                }
+
                 If (LLess (OSYS, 0x07DC))
                 {
                     Return (SBFI) /* \_SB_.PCI0.I2C1.TPL1.SBFI */
