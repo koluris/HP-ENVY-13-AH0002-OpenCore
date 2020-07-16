@@ -61,9 +61,9 @@
 				<key>WiFi_1</key>
 				<dict>
 					<key>password</key>
-					<string>2106719516</string>
+					<string></string>
 					<key>ssid</key>
-					<string>mavro</string>
+					<string></string>
 				</dict>
 			</dict>
 		</dict>
