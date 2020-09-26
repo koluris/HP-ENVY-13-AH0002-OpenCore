@@ -113,12 +113,6 @@
 				<data>GxkAAA==</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
@@ -145,6 +139,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 			</dict>
@@ -161,6 +157,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VirtualSMC</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 			</dict>
@@ -177,6 +175,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 			</dict>
@@ -193,6 +193,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/CPUFriend</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>CPUFriend.kext</string>
 			</dict>
@@ -209,6 +211,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string></string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>CPUFriendDataProvider.kext</string>
 			</dict>
@@ -225,6 +229,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelBluetoothFirmware</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>IntelBluetoothFirmware.kext</string>
 			</dict>
@@ -241,6 +247,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string></string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>IntelBluetoothInjector.kext</string>
 			</dict>
@@ -257,6 +265,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCBatteryManager</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>SMCBatteryManager.kext</string>
 			</dict>
@@ -273,6 +283,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCProcessor</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 			</dict>
@@ -289,6 +301,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Sinetek-rtsx</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>Sinetek-rtsx.kext</string>
 			</dict>
@@ -305,6 +319,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string></string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>USBPorts.kext</string>
 			</dict>
@@ -321,6 +337,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooGPIO</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext</string>
 			</dict>
@@ -337,6 +355,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooI2CServices</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
 			</dict>
@@ -353,6 +373,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooInput</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext</string>
 			</dict>
@@ -369,6 +391,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Controller</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext</string>
 			</dict>
@@ -385,6 +409,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Keyboard</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
 			</dict>
@@ -401,6 +427,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Trackpad</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
 			</dict>
@@ -417,6 +445,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 			</dict>
@@ -433,6 +463,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/itlwm</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>itlwm.kext</string>
 			</dict>
@@ -449,6 +481,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooI2C</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooI2C.kext</string>
 			</dict>
@@ -465,6 +499,8 @@
 				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooI2CHID</string>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VoodooI2CHID.kext</string>
 			</dict>
@@ -495,6 +531,8 @@
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
+			<false/>
+			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
@@ -514,6 +552,15 @@
 			<false/>
 			<key>XhciPortLimit</key>
 			<false/>
+		</dict>
+		<key>Scheme</key>
+		<dict>
+			<key>FuzzyMatch</key>
+			<true/>
+			<key>KernelArch</key>
+			<string>x86_64</string>
+			<key>KernelCache</key>
+			<string>Auto</string>
 		</dict>
 	</dict>
 	<key>Misc</key>
@@ -572,16 +619,28 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>ApECID</key>
+			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
+			<key>DmgLoading</key>
+			<string>Signed</string>
+			<key>EnablePassword</key>
+			<false/>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
+			<key>PasswordHash</key>
+			<data></data>
+			<key>PasswordSalt</key>
+			<data></data>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
+			<key>SecureBootModel</key>
+			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -791,9 +850,13 @@
 			<false/>
 			<key>AppleImageConversion</key>
 			<false/>
+			<key>AppleImg4Verification</key>
+			<false/>
 			<key>AppleKeyMap</key>
 			<false/>
 			<key>AppleRtcRam</key>
+			<false/>
+			<key>AppleSecureBoot</key>
 			<false/>
 			<key>AppleSmcIo</key>
 			<false/>
