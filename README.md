@@ -53,5 +53,4 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ErfofIAxkd4/0.jpg)](https://www.youtube.com/watch?v=ErfofIAxkd4)
 
-A big thanks to contribution of https://github.com/rholelaw!
-And for the 4 Speakers fix, congratulations for https://github.com/djimc!
+A big thanks to contribution of https://github.com/rholelaw and for the 4 Speakers fix, congratulations to https://github.com/djimc!
