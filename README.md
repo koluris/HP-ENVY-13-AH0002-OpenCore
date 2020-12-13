@@ -19,7 +19,7 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 * HD620 2GB / Metal / Fixed RGB Banding / DRM works on Chrome
 * Touchscreen with Gestures
 * USB-C DP to 4K Monitor/TV (Sleep laptop at least once on a cold boot to make this work)
-* ALC285 Speaker (2 top) / Mic / Headphones
+* ALC285 Speaker (4 speakers) / Mic / Headphones
 * Brightness, KB Backlit, Volume shortcuts
 * Trackpad Gestures / Doesn't stall after KB press
 * USB Ports USB2/3/C
@@ -31,6 +31,11 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 
 ![Trackpad](https://raw.githubusercontent.com/dkoluris/HP-ENVY-13-AH0002-OpenCore/master/Screenshots/Trackpad.jpg)
 
+### Audio fix for 4 speakers
+* Make a new aggregate device on MIDI Setup app which will contain both available output devices (Tweeter & B&O Bass speakers)
+* Go to Sound Preferences and select that new aggregate device for main audio output
+* In order to be able to adjust the volume for that new aggregate audio device, please make use of: SoundFlower & SoundFlowerBed
+
 ### Bonus
 * Wifi & Bluetooth work, but with experimental driver and HeliPort app (expect some problems)
 * ICC Profile that improves the screen's native color
@@ -38,7 +43,6 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 ![Bluetooth](https://raw.githubusercontent.com/dkoluris/HP-ENVY-13-AH0002-OpenCore/master/Screenshots/Bluetooth.jpg)
 
 ### What doesn't work
-* Low audio volume & absence of bottom speakers
 * Apple TV DRM
 
 ![Geekbench](https://raw.githubusercontent.com/dkoluris/HP-ENVY-13-AH0002-OpenCore/master/Screenshots/Scores.jpg)
@@ -50,3 +54,4 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ErfofIAxkd4/0.jpg)](https://www.youtube.com/watch?v=ErfofIAxkd4)
 
 A big thanks to contribution of https://github.com/rholelaw!
+And for the 4 Speakers fix, congratulations for https://github.com/djimc!
