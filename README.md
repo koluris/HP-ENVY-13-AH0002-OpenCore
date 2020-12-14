@@ -34,7 +34,7 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 ### Audio fix for 4 speakers
 * Make a new aggregate device on MIDI Setup app which will contain both available output devices (Tweeter & B&O Bass speakers)
 * Go to Sound Preferences and select that new aggregate device for main audio output
-* In order to be able to adjust the volume for that new aggregate audio device, please make use of: SoundFlower & SoundFlowerBed
+* In order to be able to adjust the volume for that new aggregate audio device, please make use of: <a href="https://github.com/rlxone/MultiSoundChanger/releases">MultiSoundChanger</a>
 
 ### Bonus
 * Wifi & Bluetooth work, but with experimental driver and HeliPort app (expect some problems)
