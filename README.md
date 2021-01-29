@@ -51,6 +51,6 @@ So far the build is awesome, cold boot time to Mac in 16 seconds!
 * Use HeliPort to facilitate Intel Wifi usage
 * Use QuickESP to mount EFI partitions with ease (status bar app)
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ErfofIAxkd4/0.jpg)](https://www.youtube.com/watch?v=ErfofIAxkd4)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/k_xbivzpxYE/0.jpg)](https://www.youtube.com/watch?v=k_xbivzpxYE)
 
 A big thanks to contribution of https://github.com/rholelaw and for the 4 Speakers fix, congratulations to https://github.com/djimc!
