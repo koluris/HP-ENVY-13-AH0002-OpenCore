@@ -1,4 +1,4 @@
-# HP-ENVY-13-AH0002-OpenCore
+# HP-ENVY-13-AH0002-OpenCore (<a href="https://naden.co">https://naden.co</a>)
 Attempt to Hackintosh a 13" HP ultrabook
 
 ### Overall
